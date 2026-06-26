@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+    /* colours */
+    --color-background: #000100;
+    --color-surface: #46464f;
+    --color-accent: #431723;
+    --color-text: #928e80;
+
+    /* fonts */
+    --font-sans: "Ithaca", sans-serif;
+}
+
+@font-face {
+    font-family: "Ithaca";
+    src: url("/fonts/Ithaca.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    @apply bg-background text-text;
+}
+
+h1 {
+    @apply mt-[-60px] text-[10rem] font-bold [text-shadow:0px_6px_0px_#431723];
+}
+
+h2 {
+    @apply mt-[-30px] text-[5rem] font-bold [text-shadow:0px_4px_0px_#431723];
+}
+
+h3 {
+    @apply mt-[-30px] text-[4rem];
+}
