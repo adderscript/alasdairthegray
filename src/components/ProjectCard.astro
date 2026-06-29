@@ -1,0 +1,15 @@
+---
+import { describe } from 'astro:schema';
+
+interface Props {
+    name: string;
+    description: string;
+}
+
+const  { name, description } = Astro.props as Props;
+---
+
+<a class="m-5 p-3 bg-surface">
+    <h2>{name}</h2>
+    <h3>{description}</h3>
+</a>

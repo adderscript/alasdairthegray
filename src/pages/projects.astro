@@ -1,0 +1,14 @@
+---
+import Welcome from '../components/Welcome.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import games from '../data/games.json';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <h1 class="m-4">The Wizards Projects</h1>
+
+    {games.map(game => (
+        <ProjectCard name={game.name} description={game.description} />
+    ))}
+</Layout>
