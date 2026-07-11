@@ -1,0 +1,14 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Card from '../components/Card.astro';
+import tutorials from '../data/tutorials.json';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <h1 class="m-4">The Wizards Tutorials</h1>
+
+    {tutorials.map(tutorial => (
+        <Card name={tutorial.name} description={tutorial.description} />
+    ))}
+</Layout>
