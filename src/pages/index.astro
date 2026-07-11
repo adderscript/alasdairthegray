@@ -1,13 +1,15 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import ProjectsLink from '../components/ProjectsLink.astro';
+import TutorialsLink from '../components/TutorialsLink.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
     <Welcome />
 
-    <div class="flex justify-center">
+    <div class="flex flex-col items-center">
         <ProjectsLink />
+        <TutorialsLink />
     </div>
 </Layout>
