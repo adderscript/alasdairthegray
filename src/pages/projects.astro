@@ -6,9 +6,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <h1 class="m-4">The Wizards Projects</h1>
+    <h1 class="m-8"><a href="/">The Wizard's Projects</a></h1>
 
-    {games.map(game => (
-        <Card name={game.name} description={game.description} />
-    ))}
+    <div class="leading-relaxed grid grid-cols-2 gap-4">
+        {games.map(game => (
+            <Card name={game.name} description={game.description} />
+        ))}
+    </div>
 </Layout>

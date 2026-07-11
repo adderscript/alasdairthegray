@@ -9,7 +9,7 @@ interface Props {
 const  { name, description } = Astro.props as Props;
 ---
 
-<a class="m-5 p-3 bg-surface">
-    <h2>{name}</h2>
-    <h3>{description}</h3>
+<a class="m-7 pt-8 text-left border-t-4 border-accent">
+    <h2 class="mb-5">{name}</h2>
+    <h3 class="leading-none">{description}</h3>
 </a>

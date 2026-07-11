@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    @apply mt-[-30px] text-[5rem] font-bold [text-shadow:0px_4px_0px_#431723];
+    @apply mt-[-30px] text-[5rem] font-bold [text-shadow:0px_5px_0px_#431723];
 }
 
 h3 {

@@ -2,5 +2,13 @@
     {
         "name": "Test",
         "description": "A test for testing stuff"
+    },
+    {
+        "name": "More test",
+        "description": "More test for testing stuff"
+    },
+    {
+        "name": "Even more test",
+        "description": "Even more test for testing stuff"
     }
 ]
