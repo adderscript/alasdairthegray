@@ -4,12 +4,13 @@ import { describe } from 'astro:schema';
 interface Props {
     name: string;
     description: string;
+    url: string;
 }
 
-const  { name, description } = Astro.props as Props;
+const  { name, description, url } = Astro.props as Props;
 ---
 
-<a class="m-7 pt-8 text-left border-t-4 border-accent">
-    <h2 class="mb-5">{name}</h2>
+<a href={url} class="m-7 pt-8 text-left border-t-4 border-accent">
+    <h2 class="mb-12 leading-none">{name}</h2>
     <h3 class="leading-none">{description}</h3>
 </a>

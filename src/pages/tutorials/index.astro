@@ -1,13 +1,18 @@
 ---
+import { getCollection } from "astro:content";
 import Welcome from '../../components/Welcome.astro';
 import Card from '../../components/Card.astro';
 import Layout from '../../layouts/Layout.astro';
+
+const tutorials = await getCollection("tutorials");
 ---
 
 <Layout>
     <h1 class="m-8"><a href="/">The Wizard's Tutorials</a></h1>
 
     <div class="leading-relaxed grid grid-cols-2 gap-4">
-        <Card name="not real" description="dont bother trying to click" />
+        {tutorials.map(tutorial => (
+            <Card name={tutorial.data.title} description={tutorial.data.description} url={`/tutorials/${tutorial.id}`} />
+        ))}
     </div>
 </Layout>
