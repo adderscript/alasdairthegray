@@ -1,22 +1,18 @@
 ---
-import NavButton from '../components/NavButton.astro';
-import SocialsButton from '../components/SocialsButton.astro';
-import Comic from '../components/Comic.astro';
+import Header from '../components/Header.astro';
+import GamesPageLink from '../components/GamesPageLink.astro';
+import Button from '../components/Button.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<!-- pages -->
-	<div class="m-3 flex flex-wrap gap-6 justify-center">
-		<NavButton name="GAMES" page="/games" icon="/icons/games.svg" />
-		<NavButton name="ABOUT ME" page="/aboutme" icon="/icons/aboutme.svg" />
-	</div>
-	
+    <Header />
+    <GamesPageLink />
+
 	<!-- socials -->
 	<div class="m-3 mb-20 flex flex-wrap gap-6 justify-center">
-		<SocialsButton name="GITHUB" link="https://github.com/adderscript" icon="/icons/github.svg" />
-		<SocialsButton name="EMAIL" link="mailto:alasdair@adderscript.net" icon="/icons/email.svg" />
-		<SocialsButton name="BUY ME A COFFEE" link="https://buymeacoffee.com/AdderScript" icon="/icons/coffee.svg" />
+		<Button name="GITHUB" link="https://github.com/adderscript" />
+		<Button name="EMAIL" link="mailto:alasdair@adderscript.net" />
+		<Button name="BUY ME A COFFEE" link="https://buymeacoffee.com/AdderScript" />
 	</div>
-	<Comic />
 </Layout>
