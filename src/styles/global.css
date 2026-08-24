@@ -27,11 +27,11 @@
     --color-fullscreen-button-hover: #7a3fee;
 
     /* font */
-    --font-sans: Scientifica, monospace;
+    --font-sans: Yoster, monospace;
 }
 
 @font-face {
-    font-family: "Scientifica";
+    font-family: "Yoster";
     src: url("/fonts/yoster.ttf") format("truetype");
 }
 
@@ -39,10 +39,14 @@ body {
     @apply bg-background text-white text-center text-2xl;
 }
 
-.prose h1 {
-    @apply text-3xl font-bold
+h1 {
+    @apply text-7xl text-text text-shadow-[0px_5px_0px_#431723]
 }
 
-.prose h2 {
-    @apply text-2xl font-bold
+h2 {
+    @apply text-5xl text-text
+}
+
+h3 {
+    @apply text-2xl text-surface
 }
