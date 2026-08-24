@@ -25,22 +25,6 @@
         ]
     },
     {
-        "title": "Hamster Horsepower",
-        "thumbnailPath": "/thumbnails/hamster-horsepower.png",
-        "gamePage": "/games/hamster-horsepower",
-        "gameUrl": "/game-iframes/hamster-horsepower/index.html",
-        "controls": [
-            {
-                "keys": ["Mouse"],
-                "description": "Buy things"
-            },
-            {
-                "keys": ["Space"],
-                "description": "Open shop"
-            }        
-        ]
-    },
-    {
         "title": "Point Null",
         "thumbnailPath": "/thumbnails/pointnull.png",
         "gamePage": "/games/pointnull",
@@ -66,54 +50,6 @@
                 "keys": ["ESC"],
                 "description": "Pause menu"
             }
-        ]
-    },
-    {
-        "title": "Polygon Clicker",
-        "thumbnailPath": "/thumbnails/polygon-clicker.png",
-        "gamePage": "/games/polygon-clicker",
-        "gameUrl": "/game-iframes/polygon-clicker/index.html",
-        "controls": [
-            {
-                "keys": ["X"],
-                "description": "Click"
-            },
-            {
-                "keys": ["Up", "Down"],
-                "description": "Navigate upgrade panel"
-            },
-            {
-                "keys": ["Z"],
-                "description": "Buy selected upgrade"
-            }        
-        ]
-    },
-    {
-        "title": "Flappy Square",
-        "thumbnailPath": "/thumbnails/flappy-square.png",
-        "gamePage": "/games/flappy-square",
-        "gameUrl": "/game-iframes/flappy-square/index.html",
-        "controls": [
-            {
-                "keys": ["Up"],
-                "description": "Flap/Jump"
-            }
-        ]
-    },
-    {
-        "title": "Pixels",
-        "thumbnailPath": "/thumbnails/pixels.png",
-        "gamePage": "/games/pixels",
-        "gameUrl": "/game-iframes/pixels/index.html",
-        "controls": [
-            {
-                "keys": ["Up", "Down", "Left", "Right"],
-                "description": "Move"
-            },
-            {
-                "keys": ["X"],
-                "description": "Shoot"
-            }        
         ]
     }
 ]
