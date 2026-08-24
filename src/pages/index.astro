@@ -1,18 +1,18 @@
 ---
 import Header from '../components/Header.astro';
-import GamesPageLink from '../components/GamesPageLink.astro';
-import Button from '../components/Button.astro';
+import PageLink from '../components/PageLink.astro';
+import SocialsButton from '../components/SocialsButton.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
     <Header />
-    <GamesPageLink />
+    <PageLink name="Games"/>
 
 	<!-- socials -->
 	<div class="m-3 mb-20 flex flex-wrap gap-6 justify-center">
-		<Button name="GITHUB" link="https://github.com/adderscript" />
-		<Button name="EMAIL" link="mailto:alasdair@adderscript.net" />
-		<Button name="BUY ME A COFFEE" link="https://buymeacoffee.com/AdderScript" />
+		<SocialsButton name="GITHUB" link="https://github.com/adderscript" />
+		<SocialsButton name="EMAIL" link="mailto:alasdair@adderscript.net" />
+		<SocialsButton name="BUY ME A COFFEE" link="https://buymeacoffee.com/AdderScript" />
 	</div>
 </Layout>

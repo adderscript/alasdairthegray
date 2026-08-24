@@ -1,30 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-    --color-accent: #431723;
+    /* colours */
     --color-background: #000100;
-
     --color-surface: #46464f;
-
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #a0a0a0;
-    --color-text-muted: #707070;
-
-    --color-border-subtle: #2a2a2a;
-    --color-border-default: #404040;
-    --color-border-emphasis: #606060;
-
-    --color-game-card-background: #1a1a1a;
-    --color-game-card-background-hover: #222222;
-
-    --color-blog-card-background: #1c1c1c;
-    --color-blog-card-background-hover: #242424;
-
-    --color-nav-button: #202020;
-    --color-nav-button-hover: #2a2a2a;
-
-    --color-fullscreen-button: #8c52ff;
-    --color-fullscreen-button-hover: #7a3fee;
+    --color-accent: #431723;
+    --color-text: #928e80;
 
     /* font */
     --font-sans: Yoster, monospace;
@@ -44,7 +25,7 @@ h1 {
 }
 
 h2 {
-    @apply text-5xl text-text
+    @apply text-5xl text-text text-shadow-[0px_3px_0px_#431723]
 }
 
 h3 {
