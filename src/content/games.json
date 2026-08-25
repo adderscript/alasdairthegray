@@ -2,9 +2,9 @@
     {
         
         "title": "Wizards",
-        "thumbnailPath": "/thumbnails/wizards.png",
+        "description": "A top down shooter about wizards",
         "gamePage": "/games/wizards",
-        "gameUrl": "/game-iframes/wizards/index.html",
+        "gameUrl": "https://games.alasdairthegray.com/games/wizards/index.html",
         "controls": [
             {
                 "keys": ["W", "A", "S", "D"],
@@ -26,9 +26,9 @@
     },
     {
         "title": "Point Null",
-        "thumbnailPath": "/thumbnails/pointnull.png",
+        "description": "/thumbnails/pointnull.png",
         "gamePage": "/games/pointnull",
-        "gameUrl": "/game-iframes/pointnull/index.html",
+        "gameUrl": "https://games.alasdairthegray.com/games/pointnull/index.html",
         "controls": [
             {
                 "keys": ["W", "A", "S", "D"],

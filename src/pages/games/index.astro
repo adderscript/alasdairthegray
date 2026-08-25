@@ -1,9 +1,13 @@
 ---
-import GameGrid from '../../components/GameGrid.astro';
 import Layout from '../../layouts/Layout.astro';
-import games from '../../content/games.json';
+import GameCard from '../../components/GameCard.astro';
+import games from '../../content/games.json'
 ---
 
 <Layout>
-    <GameGrid />
+    <div class="text-left">
+        {games.map(game => (
+            <GameCard title={game.title} description={game.description} gamePage={game.gamePage} />
+        ))}
+    </div>
 </Layout>
