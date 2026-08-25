@@ -15,9 +15,10 @@ const { game } = Astro.props;
 
 <Layout>
     <div class="-mt-10 w-full max-w-[1600px] mx-auto px-5 py-10">
-        <h1 class="text-[28px] font-semibold text-accent-muted mb-6">
-            {game.title}
-        </h1>
+        <a href="/">
+            <h1 class="mb-6">{game.title}</h1>
+        </a>
+        
 
         <div class="game-layout">
             <!-- Game Container -->
@@ -31,17 +32,6 @@ const { game } = Astro.props;
                         allow="gamepad; microphone; camera"
                         class="w-full h-full border-none block"
                     ></iframe>
-
-                    <!-- Fullscreen Button (always in bottom right) -->
-                    <button
-                        id="fullscreen-btn"
-                        class="absolute bottom-4 right-4 z-50 flex gap-2 px-4 py-2 bg-black/80 hover:bg-black/90
-                            border-2 border-accent-muted
-                            rounded-md transition-all duration-100
-                            text-text-secondary font-bold hover:text-text-primary"
-                    >
-                        <span id="fullscreen-text">⛶ Fullscreen</span>
-                    </button>
                 </div>
             </div>
 

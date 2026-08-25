@@ -4,7 +4,7 @@
         "title": "Wizards",
         "description": "A top down shooter about wizards",
         "gamePage": "/games/wizards",
-        "gameUrl": "https://games.alasdairthegray.com/games/wizards/index.html",
+        "gameUrl": "https://games.alasdairthegray.com/wizards/index.html",
         "controls": [
             {
                 "keys": ["W", "A", "S", "D"],
@@ -28,7 +28,7 @@
         "title": "Point Null",
         "description": "/thumbnails/pointnull.png",
         "gamePage": "/games/pointnull",
-        "gameUrl": "https://games.alasdairthegray.com/games/pointnull/index.html",
+        "gameUrl": "https://games.alasdairthegray.com/pointnull/index.html",
         "controls": [
             {
                 "keys": ["W", "A", "S", "D"],
