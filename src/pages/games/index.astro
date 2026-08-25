@@ -5,7 +5,7 @@ import games from '../../content/games.json'
 ---
 
 <Layout>
-    <div class="text-left">
+    <div class="wm-max text-left">
         {games.map(game => (
             <GameCard title={game.title} description={game.description} gamePage={game.gamePage} />
         ))}
