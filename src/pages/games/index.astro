@@ -1,10 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import GameCard from '../../components/GameCard.astro';
 import games from '../../content/games.json'
 ---
 
 <Layout>
+    <h1 class="m-2">Very Cool Games</h1>
+
     <div class="wm-max text-left">
         {games.map(game => (
             <GameCard title={game.title} description={game.description} gamePage={game.gamePage} />

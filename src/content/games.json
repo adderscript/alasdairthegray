@@ -26,7 +26,7 @@
     },
     {
         "title": "Point Null",
-        "description": "/thumbnails/pointnull.png",
+        "description": "A monochrome platformer shooter",
         "gamePage": "/games/pointnull",
         "gameUrl": "https://projects.alasdairthegray.com/pointnull/index.html",
         "controls": [
