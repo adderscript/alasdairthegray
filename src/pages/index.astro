@@ -7,7 +7,14 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
     <Header />
-    <PageLink name="Games" link="/games" />
+	<div class="flex items-center border-surface">
+		<PageLink name="Games" link="/games" />
+		<img src="/wizard.png" alt="wizard" class="w-85 h-85 [image-rendering:pixelated]" />
+	</div>
+	<div class="flex items-center border-surface">
+		<img src="/little-gremlin.png" alt="wizard" class="w-85 h-85 [image-rendering:pixelated]" />
+		<PageLink name="Tutorials" link="/tutorials" />
+	</div>	
 
 	<!-- socials -->
 	<div class="m-3 mt-10 mb-20 flex flex-wrap gap-6 justify-center">
