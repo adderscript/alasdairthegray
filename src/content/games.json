@@ -48,7 +48,7 @@
             },
             {
                 "keys": ["ESC"],
-                "description": "Pause menu"
+                "description": "Crash the game"
             }
         ]
     }
