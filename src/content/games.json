@@ -1,5 +1,10 @@
 [
     {
+        "title": "Flappy Trip",
+        "description": "Flappy bird but on an acid trip",
+        "url": "https://projects.alasdairthegray.com/flappy-trip/index.html"
+    },
+    {
         "title": "Wizards",
         "description": "A top down shooter about wizards",
         "url": "https://projects.alasdairthegray.com/wizards/index.html"
