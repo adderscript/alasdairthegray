@@ -3,53 +3,11 @@
         
         "title": "Wizards",
         "description": "A top down shooter about wizards",
-        "gamePage": "/games/wizards",
-        "gameUrl": "https://projects.alasdairthegray.com/wizards/index.html",
-        "controls": [
-            {
-                "keys": ["W", "A", "S", "D"],
-                "description": "Move around"
-            },
-            {
-                "keys": ["Mouse"],
-                "description": "Move gun"
-            },
-            {
-                "keys": ["Left Mouse Button"],
-                "description": "Shoot"
-            },
-            {
-                "keys": ["ESC"],
-                "description": "Open settings"
-            }
-        ]
+        "url": "https://projects.alasdairthegray.com/wizards/index.html",
     },
     {
         "title": "Point Null",
         "description": "A monochrome platformer shooter",
-        "gamePage": "/games/pointnull",
-        "gameUrl": "https://projects.alasdairthegray.com/pointnull/index.html",
-        "controls": [
-            {
-                "keys": ["W", "A", "S", "D"],
-                "description": "Move around"
-            },
-            {
-                "keys": ["Space"],
-                "description": "Jump"
-            },
-            {
-                "keys": ["Mouse"],
-                "description": "Look around / Aim"
-            },
-            {
-                "keys": ["Left Click"],
-                "description": "Action / Fire"
-            },
-            {
-                "keys": ["ESC"],
-                "description": "Crash the game"
-            }
-        ]
+        "url": "https://projects.alasdairthegray.com/pointnull/index.html",
     }
 ]

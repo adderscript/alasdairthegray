@@ -10,7 +10,7 @@ import games from '../../content/games.json'
 
     <div class="wm-max text-left">
         {games.map(game => (
-            <GameCard title={game.title} description={game.description} gamePage={game.gamePage} />
+            <GameCard title={game.title} description={game.description} gamePage={game.url} />
         ))}
     </div>
 </Layout>
