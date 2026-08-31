@@ -22,16 +22,25 @@ const { game } = Astro.props;
 
         <div class="game-layout">
             <!-- Game Container -->
-            <div class="game-container-wrapper bg-game-card-background overflow-hidden">
-                <div id="game-container" class="relative bg-black">
+            <div class="game-container-wrapper overflow-hidden">
+                <div id="game-container" class="relative border-2 border-accent">
                     <iframe
                         id="game-iframe"
                         src={game.gameUrl}
                         title={game.title}
                         allowfullscreen
                         allow="gamepad; microphone; camera"
-                        class="w-full h-full border-none block"
+                        class="w-full h-full border-none"
                     ></iframe>
+
+                    <div class="absolute inset-0 z-10 pointer-events-none">
+                        <a
+                            href={game.gameUrl}
+                            class="pointer-events-auto absolute top-2 left-2 px-3 py-2 text-text text-xl"
+                        >
+                            fullscreen
+                        </a>
+                    </div>  
                 </div>
             </div>
 
@@ -71,14 +80,8 @@ const { game } = Astro.props;
         left: 0;
         width: 100%;
         height: 100%;
-    }
-
-    #game-container button {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        z-index: 50;
-    }
+        z-index: 1;
+    }   
 
     @media (min-width: 1024px) {
         .game-layout {
@@ -95,49 +98,4 @@ const { game } = Astro.props;
             flex-shrink: 0;
         }
     }
-
-    /* Fullscreen styles */
-    #game-container:fullscreen {
-        width: 100vw !important;
-        height: 100vh !important;
-        max-width: 100vw !important;
-        max-height: 100vh !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #game-container:fullscreen iframe {
-        width: 100% !important;
-        height: 100% !important;
-    }
 </style>
-
-<script>
-    const gameContainer = document.getElementById('game-container') as HTMLDivElement;
-    const fullscreenBtn = document.getElementById('fullscreen-btn') as HTMLButtonElement;
-    const fullscreenText = document.getElementById('fullscreen-text') as HTMLSpanElement;
-
-    function toggleFullscreen() {
-        if (!document.fullscreenElement) {
-            gameContainer.requestFullscreen().catch(err => {
-                console.error('Error attempting to enable fullscreen:', err);
-            });
-        } else {
-            document.exitFullscreen();
-        }
-    }
-
-    function handleFullscreenChange() {
-        const isFullscreen = !!document.fullscreenElement;
-
-        if (isFullscreen) {
-            fullscreenText.textContent = '✕ Exit Fullscreen';
-        } else {
-            fullscreenText.textContent = '⛶ Fullscreen';
-        }
-    }
-
-    fullscreenBtn.addEventListener('click', toggleFullscreen);
-    document.addEventListener('fullscreenchange', handleFullscreenChange);
-</script>
