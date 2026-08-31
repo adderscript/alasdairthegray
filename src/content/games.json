@@ -1,13 +1,12 @@
 [
     {
-        
         "title": "Wizards",
         "description": "A top down shooter about wizards",
-        "url": "https://projects.alasdairthegray.com/wizards/index.html",
+        "url": "https://projects.alasdairthegray.com/wizards/index.html"
     },
     {
         "title": "Point Null",
         "description": "A monochrome platformer shooter",
-        "url": "https://projects.alasdairthegray.com/pointnull/index.html",
+        "url": "https://projects.alasdairthegray.com/pointnull/index.html"
     }
 ]
